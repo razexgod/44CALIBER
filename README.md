@@ -26,3 +26,5 @@ https://imgur.com/a/8xSfj1E
 ---
 
 Using MorganSkilly Unity Library - https://github.com/MorganSkilly/Unity-Discord-Webhook-System
+
+Based on Reborn Stealer - https://github.com/PyluOtBabylu/Reborn-Stealer-2021-SOURCE
