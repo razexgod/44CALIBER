@@ -10,11 +10,11 @@
 
 1) Создать Discord Webhook в разделе интеграций в чате дискорда, в который будут приходить логи.
 
-https://imgur.com/a/cSqklob
+![Image alt](https://github.com/Khainaaeh/44CALIBER/blob/main/screenshots/2.png)
 
 2) В сурсе Resources->Discord->DiscordWebhook.cs поменять данные на свои:
 
-https://imgur.com/a/8xSfj1E
+![Image alt](https://github.com/Khainaaeh/44CALIBER/blob/main/screenshots/3.png)
 
 ВАЖНО :exclamation:
 Не создавайте бота с русскими символами, иначе логи приходить не будут.
@@ -22,6 +22,10 @@ https://imgur.com/a/8xSfj1E
 3) Скомпилить.
 
 На выходе файл на антискане будет 13/26. Юзай криптор ConfuserEx для 1/26.
+
+![Image alt](https://github.com/Khainaaeh/44CALIBER/blob/main/screenshots/4.png)
+
+![Image alt](https://github.com/Khainaaeh/44CALIBER/blob/main/screenshots/5.png)
 
 ---
 
