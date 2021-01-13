@@ -21,7 +21,7 @@
 
 3) Скомпилить.
 
-На выходе файл на антискане будет 13/26. Юзай криптор ConfuserEx для 1/26.
+На выходе файл на антискане будет ~7/26. Юзай криптор ConfuserEx для 1/26.
 
 ![Image alt](https://github.com/Khainaaeh/44CALIBER/blob/main/screenshots/4.png)
 
