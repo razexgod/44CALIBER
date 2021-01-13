@@ -2,7 +2,7 @@
 
 :closed_lock_with_key: Поддержка Chrome v80+, Firefox v75+, стилит впн, криптокошельки, ваймворлд, стим, фтп, достает BSSID, токен и сессия дискорд, и т.д.
 
-https://imgur.com/a/V6nzoff
+![Image alt](https://github.com/Khainaaeh/44CALIBER/blob/main/screenshots/1.png)
 
 :exclamation: Написан исключительно в образовательных целях! Я не несу ответственности за использование данного проекта и любых его частей кода.
 
