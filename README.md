@@ -26,7 +26,9 @@
 ![Image alt](https://github.com/Khainaaeh/44CALIBER/blob/main/screenshots/4.png)
 
 ![Image alt](https://github.com/Khainaaeh/44CALIBER/blob/main/screenshots/5.png)
-
+---
+Support me:
+BTC: bc1q7mehv2t4nr60gthktyhg7a03r4u9ht3nzzypt4
 ---
 
 Using MorganSkilly Unity Library - https://github.com/MorganSkilly/Unity-Discord-Webhook-System
