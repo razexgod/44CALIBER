@@ -28,8 +28,6 @@
 ![Image alt](https://github.com/Khainaaeh/44CALIBER/blob/main/screenshots/5.png)
 ---
 
-Using MorganSkilly Unity Library - https://github.com/MorganSkilly/Unity-Discord-Webhook-System
-
 Based on Reborn Stealer - https://github.com/PyluOtBabylu/Reborn-Stealer-2021-SOURCE
 
 Donate me -
