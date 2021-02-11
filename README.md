@@ -31,6 +31,8 @@
 Based on Reborn Stealer - https://github.com/PyluOtBabylu/Reborn-Stealer-2021-SOURCE
 
 Donate me -
-BTC:
+Monero:
 
-bc1q7mehv2t4nr60gthktyhg7a03r4u9ht3nzzypt4
+48f3giiLzUxNawqSb46ZWpMMyFFsSpvepQ4dHcVH1wS4jYNteUSom1k1RU4moDERpdF9mDNfZgUzQXrtsZa2ajWA4LfTe4w
+
+
